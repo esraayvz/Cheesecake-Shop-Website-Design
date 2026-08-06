@@ -1,2 +1,2 @@
-# Web-Teknolojisi
-Bu proje, cheesecake satan bir mekanın modern bir web sitesinin tasarımını içeriyor. HTML, CSS ve JavaScript frontend teknolojilerini kullanılarak geliştirilmiş olan site, kullanıcı dostu bir arayüz sunuyor. Ziyaretçiler, mekanın cheesecake çeşitlerini keşfedebilir. Responsive tasarım sayesinde tüm cihazlarda uyumlu bir şekilde çalışan bir sitedir. Renkli ve estetik tasarımıyla site, mekanın sunduğu cheesecake’leri tanıtarak kullanıcıları cezbetmeyi hedefliyor.
+# Cheesecake Shop Website Design
+This project features the modern website design for a cheesecake venue. Developed using HTML, CSS, and JavaScript frontend technologies, the site offers a user-friendly interface. Visitors can explore the venue's varieties of cheesecake. Thanks to its responsive design, the site works compatible across all devices. With its colorful and aesthetic design, the site aims to attract users by showcasing the cheesecakes offered by the venue.
