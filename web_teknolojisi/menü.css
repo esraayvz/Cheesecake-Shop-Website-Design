@@ -1,0 +1,97 @@
+.içerik {
+  /* legacy class kept for compatibility */
+}
+
+.menu-intro {
+  text-align: center;
+  max-width: 520px;
+  margin: 0 auto 1rem;
+  padding: 0 1.5rem;
+  color: var(--text-muted);
+  font-weight: 300;
+  font-size: 1.05rem;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.5rem 2rem;
+  max-width: 1100px;
+  margin: 0 auto 3rem;
+  padding: 1rem 1.5rem 2rem;
+}
+
+.menu-item {
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.menu-item img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  transition: transform 0.65s var(--ease);
+}
+
+.menu-item:hover img {
+  transform: scale(1.05);
+}
+
+.menu-item figcaption {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  padding: 1.1rem 0.15rem 0;
+  border-bottom: 1px solid rgba(99, 20, 0, 0.12);
+  padding-bottom: 1rem;
+}
+
+.caption-title {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.35rem;
+  color: var(--burgundy);
+  letter-spacing: 0.01em;
+  text-align: left;
+  margin: 0;
+}
+
+.caption-price {
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 1.05rem;
+  color: var(--text-muted);
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+  text-align: right;
+  margin: 0;
+}
+
+.dark-mode .menu-intro {
+  color: rgba(245, 213, 172, 0.8);
+}
+
+.dark-mode .caption-title {
+  color: var(--cream);
+}
+
+.dark-mode .caption-price {
+  color: rgba(245, 213, 172, 0.75);
+}
+
+.dark-mode .menu-item figcaption {
+  border-bottom-color: rgba(245, 213, 172, 0.2);
+}
+
+@media (max-width: 768px) {
+  .menu-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .menu-item img {
+    height: 260px;
+  }
+}

@@ -1,0 +1,108 @@
+.anket-formu {
+  /* title via page-title */
+}
+
+.anket-container {
+  text-align: left;
+  max-width: 680px;
+  margin: 0 auto 3rem;
+  padding: 2.5rem 2rem;
+  border: 1px solid rgba(99, 20, 0, 0.1);
+  border-radius: var(--radius);
+  background: rgba(255, 253, 249, 0.95);
+  box-shadow: 0 20px 50px rgba(99, 20, 0, 0.08);
+  font-family: var(--font-body);
+}
+
+.anket-soru {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.25rem;
+  color: var(--burgundy);
+  margin: 1.75rem 0 1rem;
+  line-height: 1.35;
+}
+
+.anket-soru:first-child {
+  margin-top: 0;
+}
+
+.anket-secenek {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  margin-bottom: 0.65rem;
+  padding: 0.55rem 0.75rem;
+  border-radius: var(--radius);
+  cursor: pointer;
+  font-weight: 300;
+  color: var(--text-muted);
+  transition: background 0.25s var(--ease);
+}
+
+.anket-secenek:hover {
+  background: var(--cream-muted);
+}
+
+.anket-secenek input {
+  accent-color: var(--burgundy);
+  width: 1.05rem;
+  height: 1.05rem;
+  cursor: pointer;
+}
+
+#gonderButton {
+  display: block;
+  width: 100%;
+  margin: 2rem auto 0;
+  padding: 0.95rem 1.25rem;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  background-color: var(--burgundy);
+  color: var(--cream);
+  border: none;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: transform 0.3s var(--ease), box-shadow 0.3s var(--ease);
+}
+
+#gonderButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(99, 20, 0, 0.22);
+  background-color: var(--burgundy);
+}
+
+.anket-katildiniz {
+  font-family: var(--font-display);
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  font-weight: 600;
+  color: var(--burgundy);
+  text-align: center;
+  margin: 4rem auto;
+  max-width: 28ch;
+  line-height: 1.3;
+}
+
+.dark-mode .anket-formu,
+.dark-mode .page-title {
+  color: var(--cream);
+}
+
+.dark-mode .anket-container {
+  color: var(--text);
+  background: rgba(255, 253, 249, 0.97);
+}
+
+.dark-mode .anket-katildiniz {
+  color: var(--burgundy);
+}
+
+@media (max-width: 768px) {
+  .anket-container {
+    margin: 0 1.25rem 3rem;
+    padding: 1.75rem 1.25rem;
+  }
+}
